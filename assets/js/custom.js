@@ -329,3 +329,12 @@ for (let i = 0; i < TestimonialsItems.length; i += 2) {
   DesktopTestimonialContainer.appendChild(newItem);
 }
 
+
+
+// Hide offcanvas menu when nav link is clicked
+$('.offcanvas .menuLink').on('click', function() {
+	$('.offcanvas').removeClass('show');
+	$('.offcanvas-backdrop').removeClass('show');
+	$('#offcanvasNav').css('visibility', 'hidden');
+	$("#offcanvasNav").removeAttr('role');
+  });

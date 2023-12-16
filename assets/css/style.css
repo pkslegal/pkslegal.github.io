@@ -1424,3 +1424,83 @@ line-height: 160%; /* 25.6px */
 }
 
 }
+
+/* notification */
+
+.notification-box {
+  position: fixed;
+  bottom: 10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 90%;
+  z-index: 9999;
+  display: none; 
+  background-color: #fff;
+  opacity: 0.9;
+  border: 1px solid #dbdbdb;
+  border-bottom: 12px;
+  -webkit-box-shadow: 0px 0px 16px -3px rgba(151,122,28,1);
+  -moz-box-shadow: 0px 0px 16px -3px rgba(151,122,28,1);
+  box-shadow: 0px 0px 16px -3px rgba(151,122,28,1);
+  
+}
+
+.notification-box .btn {
+  margin-right: 5px;
+}
+
+.notification-box .close {
+  display: none;
+}
+
+.disclaimer-content{
+  padding: 15px;
+}
+
+.disclaimer-content p, li{
+  font-size: 11px;
+  color: #000;
+}
+.disclaimer-content li{
+  display: list-item;
+  margin-bottom: 6px;
+}
+.disclaimer-content li::before{
+  content: "";
+  background-color: #a18118;
+  height: 8px;
+  width: 8px;
+  display: inline-flex;
+  margin-inline-end: 5px;
+}
+.double-btn{
+  margin-top: 20px;
+}
+.notification-box h3{
+  font-size: 22px !important;
+  color: #765C09;
+}
+.notification-box h3::after{
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #765C09;
+  display: block;
+  position: relative;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.notification-box .btn-normal {
+  font-size: 16px;
+  color: #977A1C;
+  border: 1px solid #BB9722;
+  padding: 2px 18px;
+}
+.notification-box .btn-normal:hover {
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #BB9722;
+  padding: 2px 18px;
+}

@@ -338,3 +338,21 @@ $('.offcanvas .menuLink').on('click', function() {
 	$('#offcanvasNav').css('visibility', 'hidden');
 	$("#offcanvasNav").removeAttr('role');
   });
+
+
+
+
+
+
+
+
+
+//Script to display the notification box on page load 
+$(document).ready(function(){
+    $('.notification-box').fadeIn('slow');
+  });
+
+  // Script to close the notification box on "Agree" or "Disagree" button click
+  $('.agree-btn, .disagree-btn').click(function(){
+    $('.notification-box').fadeOut('slow');
+  });
